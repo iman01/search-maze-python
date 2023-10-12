@@ -1,6 +1,7 @@
 # search-maze-python
 from cs50 a simple game to get familiar with concept of search
 
+ [Setting up python venv](https://github.com/iman01/venv)
 
 Usage:
 
