@@ -10,3 +10,10 @@ Usage:
 ``` python maze.py maze2.txt```
 
 ``` python maze.py maze3.txt```
+
+changing search algorithm:
+
+```frontier = StackFrontier()```
+
+```frontier = QueueFrontier()```
+
