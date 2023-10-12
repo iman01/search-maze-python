@@ -12,31 +12,38 @@ class StackFrontier():
         self.frontier = []
 
     def add(self, node):
-        self.frontier.append(node)
+        # TODO:
+        # append node to the frontier list
+        self.frontier
 
     def contains_state(self, state):
         return any(node.state == state for node in self.frontier)
 
     def empty(self):
-        return len(self.frontier) == 0
+        # TODO:
+        return None  # instead of None return zero if frontier list id empty
 
     def remove(self):
         if self.empty():
             raise Exception("empty frontier")
         else:
-            node = self.frontier[-1]
-            self.frontier = self.frontier[:-1]
+            # TODO:
+            node = None  # instead of None get the last node (element) from frontier (list)
+            self.frontier = None  #take all elements from the beginning of the frontier (list) up to end,
+                                  # but not including, the last node (element).
             return node
 
 
-class QueueFrontier(StackFrontier):
+class QueueFrontier(StackFrontier):  # TODO: What is happening here?
 
     def remove(self):
         if self.empty():
             raise Exception("empty frontier")
         else:
-            node = self.frontier[0]
-            self.frontier = self.frontier[1:]
+            # TODO:
+            node = None  # instead of None get the first node (element) from frontier (list)
+            self.frontier = None  #take all elements from the beginning of the frontier (list) up to end,
+                                  # but not including, the first node (element).
             return node
 
 class Maze():
